@@ -131,7 +131,7 @@ class TestAccountService(TestCase):
         """It should Read a single Account"""
         account = self._create_accounts(1)[0]
         # Make a post
-        # Get account 
+        # Get account
         # Call get with /accounts/{id}
         resp = self.client.get(
             f"{BASE_URL}/{account.id}", content_type="application/json"
